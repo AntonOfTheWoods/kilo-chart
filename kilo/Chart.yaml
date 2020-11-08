@@ -1,0 +1,26 @@
+apiVersion: v2
+name: kilo
+description: A multi-cloud network overlay built on WireGuard and designed for Kubernetes.
+appVersion: 0.1.0
+version: 0.1.0
+keywords:
+  - kilo
+  - kubernetes
+  - wireguard
+sources:
+  - https://github.com/AntonOfTheWoods/kilo-chart
+  - https://github.com/squat/kilo
+home: https://kilo.squat.ai
+icon: https://kilo.squat.ai/img/kilo.svg
+maintainers:
+  - name: Anton Melser
+    email: anton@transcrob.es
+engine: gotpl
+annotations:
+  category: Infrastructure
+dependencies:
+  - name: common
+    version: 0.x.x
+    repository: https://charts.bitnami.com/bitnami
+    tags:
+      - bitnami-common
